@@ -30,7 +30,18 @@
         let numberOfFaces = 5;
         const theLeftSide = getElementById ('leftSide')
 
-        function generateFaces(,);
+        function generateFaces() {
+            for (let i=0; i <= numberOfFaces; i++) {
+                const face = document.createElement('img')
+                face.src = 'images/smile.png';
+                const randomTop = Math.floor(Math.random()  * 1) + 400;
+                face.style.top = randomTop + 'px';
+                face.style.left = randomLeft + 'px';
+
+                theLeftSide.appendChild('face');
+            }
+        }
+        
     </script>
 </body>
 </html>
